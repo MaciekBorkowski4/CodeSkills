@@ -5,11 +5,9 @@ function makeScope (a, b) {
         scope.push(i);
     }
 }
-
-
-makeScope(10, 50);
-console.log(scope);
+makeScope(1, 50);
 
 const findThree = scope.filter(numberWithThree => numberWithThree.toString().includes('3'));
-console.log(findThree);
 
+const howMany = findThree.length;
+console.log(howMany);
